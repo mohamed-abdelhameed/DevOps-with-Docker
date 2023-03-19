@@ -1,0 +1,1 @@
+docker run --name missing-deps -it ubuntu sh -c "apt -qq update 2> /dev/null;apt -qq install -y curl > /dev/null;while true; do echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://`$website`; done"

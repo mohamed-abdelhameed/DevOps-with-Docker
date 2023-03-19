@@ -1,0 +1,2 @@
+docker container run --rm -itd --name secretmsg devopsdockeruh/simple-web-service:ubuntu
+docker exec -it secretmsg tail -f ./text.log
